@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/tema";
-import Navbar from "@/components/hfd/navbar";
-import Footer from "@/components/hfd/footer";
+import Navbar from "@/components/hfd/layouting/navbar";
+import Footer from "@/components/hfd/layouting/footer";
 
 export const metadata: Metadata = {
   title: "ArsiVerse",
@@ -28,13 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">
+      <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <Navbar/>
+          <Navbar />
           <main>
         {children}
           </main>
-          <Footer/>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
