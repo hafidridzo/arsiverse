@@ -5,38 +5,36 @@ import { BellRing, Grip, Inbox } from 'lucide-react'
 import { Button } from '../../ui/button'
 import { MenuUser } from '../elemen/menu-user'
 import { CariNavbar } from '../elemen/pencarian'
-import { MenuUpload } from '../elemen/menu-upload'
+import { ButtonUpload } from '../elemen/button-upload'
+import { ButtonApps } from '../elemen/button-apps'
+import { ButtonNotif } from '../elemen/button-notif'
 
 const Navbar = () => {
   return (
-    <nav className="flex w-full items-center justify-between border-b border-background dark:border-b dark:border-border px-6 py-2 h-12 bg-background gap-4 text-foreground">
-      <div className='grid grid-cols-2 w-full'>
-        <div className="grid grid-cols-subgrid">
-        <div className='flex  items-center justify-start gap-3'>
-          <Logo />
-          <MenuNavbar />
-        </div>
-        </div>
-        <div className='grid grid-cols-subgrid'>
-          <div className='flex items-center justify-end gap-3'>
-          <CariNavbar />
-          <MenuUpload />
-          <p className='text-muted-foreground'>|</p>
-            <Button variant="ghost" size="icon" className="h-9 w-9">
-              <BellRing className='h-6 w-6' />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-9 w-9">
-              <Inbox />
-            </Button>
-            <ButtonTema />
-            <Button variant="ghost" size="icon" className="h-9 w-9">
-              <Grip />
-            </Button>
-            <MenuUser />
+    <>
+      <header className="z-50 top-0 flex sticky w-full items-center border-b border-background dark:border-b dark:border-border px-6 py-2 h-12 gap-4 text-foreground  shadow-gray-100 shadow-xl dark:shadow-none bg-background">
+        <div className='flex w-full justify-between'>
+            <div className='flex items-center justify-start gap-3'>
+              <Logo />
+              <MenuNavbar />
+            </div>
           </div>
+          <div className='flex'>
+            <div className='flex items-center justify-end gap-2'>
+              <ButtonUpload />
+              <CariNavbar />
+              <p className='text-muted-foreground'>|</p>
+              <ButtonNotif />
+              <Button variant="icon2" size="icon" className="h-9 w-9">
+                <Inbox />
+              </Button>
+              <ButtonTema />
+              <ButtonApps />
+              <MenuUser />
+            </div>
         </div>
-      </div>
-    </nav>
+      </header>
+    </>
   )
 }
 

@@ -41,12 +41,12 @@ export function CariNavbar() {
 
     return (
         <>
-            <Button variant="a" className="h-9 pl-1 pr-2 w-fit" onClick={() => setOpen(true)}>
-                <Search className="bg-accent h-8 w-8 rounded-sm mr-2 p-1" />
-                <p className="text-sm text-muted-foreground">
-                    Cari Sesuatu {" "}
-                    <kbd className="pointer-events-none inline-flex h-6 select-none items-center gap-1 rounded bg-background px-1.5 font-mono text-sm font-semibold text-muted-foreground opacity-100">
-                        <span className="text-sm">Ctrl+J</span>
+            <Button variant="icon1" className="h-9 pl-1 pr-2 w-fit" onClick={() => setOpen(true)} >
+                <Search variant="base" className="h-8 w-8 mr-2 p-1" />
+                <p className="text-sm">
+                    Cari Sesuatu{""}
+                    <kbd className="pointer-events-none select-none items-center rounded-sm bg-background px-1.5 py-1.5 text-sm font-semibold text-icon opacity-100 ml-2">
+                        <span>Ctrl+J</span>
                     </kbd>
                 </p>
             </Button>

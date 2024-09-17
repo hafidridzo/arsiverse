@@ -34,7 +34,7 @@ import { Avatar, AvatarImage} from "../../ui/avatar"
 
 export function MenuUser() {
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
       <Button variant="link" className="w-8 h-8">
         <Avatar className='w-8 h-8'>
@@ -42,7 +42,7 @@ export function MenuUser() {
             </Avatar>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="mt-2 mr-5 w-60">
+      <DropdownMenuContent className="mt-2 mr-6 w-60">
         <div className=" min-h-4 bg-a">
 
         </div>
