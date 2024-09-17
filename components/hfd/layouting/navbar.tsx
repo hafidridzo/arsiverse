@@ -5,6 +5,7 @@ import { BellRing, Grip, Inbox } from 'lucide-react'
 import { Button } from '../../ui/button'
 import { MenuUser } from '../elemen/menu-user'
 import { CariNavbar } from '../elemen/pencarian'
+import { MenuUpload } from '../elemen/menu-upload'
 
 const Navbar = () => {
   return (
@@ -19,14 +20,15 @@ const Navbar = () => {
         <div className='grid grid-cols-subgrid'>
           <div className='flex items-center justify-end gap-3'>
           <CariNavbar />
+          <MenuUpload />
           <p className='text-muted-foreground'>|</p>
-            <ButtonTema />
             <Button variant="ghost" size="icon" className="h-9 w-9">
               <BellRing className='h-6 w-6' />
             </Button>
             <Button variant="ghost" size="icon" className="h-9 w-9">
               <Inbox />
             </Button>
+            <ButtonTema />
             <Button variant="ghost" size="icon" className="h-9 w-9">
               <Grip />
             </Button>

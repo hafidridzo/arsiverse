@@ -41,9 +41,9 @@ export function CariNavbar() {
 
     return (
         <>
-            <Button variant="a" className="h-9 pl-1 w-fit" onClick={() => setOpen(true)}>
-                <Search className="bg-background h-8 w-8 rounded-sm mr-2 p-1" />
-                <p className="text-sm text-muted-foreground ml-4">
+            <Button variant="a" className="h-9 pl-1 pr-2 w-fit" onClick={() => setOpen(true)}>
+                <Search className="bg-accent h-8 w-8 rounded-sm mr-2 p-1" />
+                <p className="text-sm text-muted-foreground">
                     Cari Sesuatu {" "}
                     <kbd className="pointer-events-none inline-flex h-6 select-none items-center gap-1 rounded bg-background px-1.5 font-mono text-sm font-semibold text-muted-foreground opacity-100">
                         <span className="text-sm">Ctrl+J</span>
