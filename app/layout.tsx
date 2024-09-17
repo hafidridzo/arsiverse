@@ -31,7 +31,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Navbar />
-          <main>
+          <main className="bg-body text-foreground">
         {children}
           </main>
           <Footer />

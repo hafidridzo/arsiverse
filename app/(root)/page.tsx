@@ -1,12 +1,21 @@
-import { Button } from "@/components/ui/button";
+import Fitur from "@/components/hfd/layouting/fitur";
+import HargaSection from "@/components/hfd/layouting/harga";
+import Hero from "@/components/hfd/layouting/hero";
 
 export default function Home() {
   return (
-    <div className="min-h-full flex flex-col flex-start paddings mb-16">
-      <div className="flex flex-col items-center justify-center md:justify-start text-center gap-y-8 flex-1">
-    <div className="flex min-h-full p-4">
-      <Button>Tombol doang</Button>
-    </div>
+    <div className="flex items-center justify-center">
+      <div className="container flex flex-col items-center justify-center gap-y-8">
+        <div className="flex min-h-min p-4">
+          <Hero />
+        </div>
+        <div className="flex min-h-fit p-4">
+          <Fitur />
+          
+        </div>
+        <div className="flex min-h-fit p-4">
+          <HargaSection />
+        </div>
       </div>
     </div>
   );

@@ -1,11 +1,9 @@
 export const MenuInspirasi = [
-  { judul:'Project Terupdate',
-    href: '/portofolio', key: 'Project Terupdate', text: 'Project Terupdate', desc: 'Temukan inspirasi karya arsitektur dari berbagai project menarik yang sudah terbangun'
-  },
   { href: '/portofolio', key: 'Find Projects', text: 'Find Projects', desc: 'Ini adalah deskripsi link menu navbar' },
   { href: '/portofolio', key: 'Learn Development', text: 'Learn Development', desc: 'Ini adalah deskripsi link menu navbar' },
   { href: '/portofolio', key: 'Career Advancement', text: 'Career Advancement', desc: 'Ini adalah deskripsi link menu navbar' },
-  { href: '/portofolio', key: 'Hire Developers', text: 'Hire Developers', desc: 'Ini adalah deskripsi link menu navbar' }
+  { href: '/portofolio', key: 'Career Advancement', text: 'Career Advancement', desc: 'Ini adalah deskripsi link menu navbar' },
+  { href: '/portofolio', key: 'Career Advancement', text: 'Career Advancement', desc: 'Ini adalah deskripsi link menu navbar' },
 ];
 
 export const categoryFilters = [
